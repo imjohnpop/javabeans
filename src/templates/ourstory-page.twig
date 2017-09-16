@@ -1,13 +1,42 @@
 {% extends '_base.twig' %}
 
+{% block navigation %}
+    <li class="nav-item">
+        <a class="nav-link jb-roboto" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto" href="menu-page.html">Menu</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto" href="coffee-page.html">Coffee</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto active" href="ourstory-page.html">Our Story</a>
+    </li>
+{% endblock %}
 
 {% block content %}
 <main>
-    <img src="img/espresso-machine.jpg" class="img-fluid w-100 h-auto" alt="story image">
     <div class="mx-2">
-        <h2 class="text-uppercase jb-roboto jb-fs-l my-4">Our story</h2>
+        <h2 class="text-uppercase jb-roboto jb-fs-l my-4 jb-fw-300">Our story</h2>
         <p class="jb-roboto jb-fs-s my-3">
         GHC started as a project of two friends and passionate baristas, John & Don in 2010.  Believing as much in the hand of an educated barista as in the innovative equipment of the our ever-growing industry, GHC offers a full spectrum of brewing opportunities – from pour overs to syphon pots to finely executed espresso beverages. Each cup of coffee is made with love, precision and care. </p>
     </div>
+    <img src="img/espresso-machine.jpg" class="img-fluid w-100 h-auto jb-bottom" alt="story image">
 </main>
+{% endblock %}
+
+{% block navigation2 %}
+    <li class="nav-item">
+        <a class="nav-link jb-roboto jb-text-underline" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto jb-text-underline" href="menu-page.html">Menu</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto jb-text-underline" href="coffee-page.html">Coffee</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto active jb-text-white" href="ourstory-page.html">Our Story</a>
+    </li>
 {% endblock %}

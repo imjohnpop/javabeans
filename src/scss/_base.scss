@@ -1,3 +1,9 @@
+.sticky-top {
+    @media only screen and (max-width:460px), (max-height: 460px) {
+        position: static;
+    }
+}
+
 .body_width {
     max-width: 1000px;
     margin: 0 auto;
@@ -19,8 +25,16 @@
     margin-bottom: -15px;
 }
 
+.jb-fs-xs {
+    font-size: 14px;
+}
+
 .jb-fs-s {
     font-size: 1em;
+}
+
+.jb-fs-sm {
+    font-size: 1.25em;
 }
 
 .jb-fs-m {
@@ -34,6 +48,19 @@
 .jb-fs-xl {
     font-size: 2.5em;
 }
-.jb-fs-xs {
-    font-size: 14px;
+
+.jb-fw-300 {
+    font-weight: 300;
+}
+
+.jb-fw-bold {
+    font-weight: bold;
+}
+
+.jb-text-underline {
+    text-decoration: underline;
+}
+
+.jb-text-white {
+    color: #fff;
 }

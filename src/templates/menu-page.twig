@@ -1,90 +1,162 @@
 {% extends '_base.twig' %}
 
+{% block navigation %}
+    <li class="nav-item">
+        <a class="nav-link jb-roboto" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto active" href="menu-page.html">Menu</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto" href="coffee-page.html">Coffee</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto" href="ourstory-page.html">Our Story</a>
+    </li>
+{% endblock %}
 
 {% block content %}
-   <main class="jb-menu">
+   <main class="jb-menu jb-fw-300">
         <div class="container">
-            <h2 class="jb-roboto text-uppercase my-4 .jb-fs-xl">Menu</h2>
+            <h2 class="jb-roboto text-uppercase mt-5 .jb-fs-xl jb-fw-300">Menu</h2>
             <div class="row">
-                <div class="col-12 col-md-6 my-4">
-                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-l">Espresso coffee</h3>
+                <div class="col-12 col-md-6 my-3">
+                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-l jb-fw-300">Espresso coffee</h3>
                         <ul class="pl-0 jb-roboto .jb-fs-s">
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Espresso</span> <span class="col-3">3.8</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Doubleespresso</span> <span class="col-3">4.9</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Americano</span> <span class="col-3">5</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Espresso machiato</span> <span class="col-3">4.3</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Cappuccino</span> <span class="col-3">5.2</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Flat White</span> <span class="col-3">5.9</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Latte</span> <span class="col-3">5.9</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Extra shot</span> <span class="col-3">1.1</span></li> 
                         </ul>
                 </div>
-                <div class="col-12 col-md-6 my-4">
-                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-l">Filter coffee</h3>
+                <div class="col-12 col-md-6 my-3">
+                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-l jb-fw-300">Filter coffee</h3>
                         <ul class="pl-0 jb-roboto .jb-fs-s">
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">House Drip Coffee</span> <span class="col-3">4.5</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Aeropress</span> <span class="col-3">5.5</span></li>
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">V60</span> <span class="col-3">6.5</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Kalita</span> <span class="col-3">12</span></li>
                         </ul>
-                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-l">Coffee specialities</h3>
+                    <h3 class="jb-roboto text-uppercase mt-5 .jb-fs-l jb-fw-300">Coffee specialities</h3>
                         <ul class="pl-0 jb-roboto .jb-fs-s">
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Cascara</span> <span class="col-3">4.9</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Irish coffee</span> <span class="col-3">10.9</span></li>
                         </ul>    
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 my-4">
-                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-l">Iced</h3>
+                <div class="col-12 col-md-6 my-3">
+                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-l jb-fw-300">Iced</h3>
                         <ul class="pl-0 jb-roboto .jb-fs-s">   
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>                                            
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Iced Latte</span> <span class="col-3">6.9</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Espresso on the rock</span> <span class="col-3">4.9</span></li>
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Iced Cascara</span> <span class="col-3">5.5</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Affogato</span> <span class="col-3">5.9</span></li>
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Iced Flat white</span> <span class="col-3">5.9</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Iced Filter</span> <span class="col-3">5.8</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Iced tea</span> <span class="col-3">4.9</span></li>
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Iced chocolate</span> <span class="col-3">6.2</span></li>                                            
                         </ul>
                 </div>
-                <div class="col-12 col-md-6 my-4">
-                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-l">Hot</h3>
+                <div class="col-12 col-md-6 my-3">
+                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-l jb-fw-300">Hot</h3>
                         <ul class="pl-0 jb-roboto .jb-fs-s">
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Tea</span> <span class="col-3">4.9</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Ginger tea</span> <span class="col-3">4.5</span></li>
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Hot chocolate</span> <span class="col-3">4.5</span></li>
                         </ul>
                 </div>
             </div>
         </div>        
         <div class="container">
-            <h2 class="jb-roboto text-uppercase my-4 .jb-fs-xl">Non-alcoholic beverages</h2>
+            <h2 class="jb-roboto text-uppercase my-4 .jb-fs-xl jb-fw-300">Non-alcoholic beverages</h2>
             <div class="row">
-                <div class="col-12 col-md-6 my-4">
-                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-m">Lemonades</h3>                    
+                <div class="col-12 col-md-6 my-3">
+                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-m jb-fw-300">Lemonades</h3>                    
                         <ul class="pl-0 jb-roboto .jb-fs-s">     
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>                            
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Fresh Squeezed Lemonade</span> <span class="col-3">5</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Ginger Lemonade</span> <span class="col-3">4.5</span></li>
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Cascara Fit Original</span> <span class="col-3">5.8</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Club-mate Cola</span> <span class="col-3">4.5</span></li>
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Tonic Thomas Henry</span> <span class="col-3">4.3</span></li> 
                         </ul>                            
                 </div>
-                <div class="col-12 col-md-6 my-4">
-                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-m">Water</h3>                    
+                <div class="col-12 col-md-6 my-3">
+                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-m jb-fw-300">Water</h3>                    
                         <ul class="pl-0 jb-roboto .jb-fs-s">   
-                            <li class="d-flex justify-content-between my-3"><span>Espresso</span> <span>3.8</span></li> 
-                            <li class="d-flex justify-content-between my-3"><span>Doubleespresso</span> <span>4.9</span></li>                                
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Sparkling</span> <span class="col-3">2.4</span></li> 
+                            <li class="d-flex justify-content-between my-3 row"><span class="col">Still</span> <span class="col-3">2.4</span></li>                                
                         </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="jb-roboto text-uppercase my-4 .jb-fs-xl jb-fw-300">Alcoholic beverages</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 my-3">
+                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-m jb-fw-300">Beer</h3>
+                    <ul class="pl-0 jb-roboto .jb-fs-s">
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Small breweries on tap</span> <span class="col-3">3.5</span></li> 
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Birell (bottled)</span> <span class="col-3">3.5</span></li> 
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Cider Magnetic Apple</span> <span class="col-3">4.5</span></li> 
+                    </ul>
+                    <h3 class="jb-roboto text-uppercase my-3 mt-4 .jb-fs-m jb-fw-300">White wine</h3>
+                    <ul class="pl-0 jb-roboto .jb-fs-s">
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Chardonnay Les Vignes de L'Arque</span> <span class="col-3">3.5</span></li> 
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Sauvignon Blanc Cháteau Le Sartre Blanc 2011</span> <span class="col-3">3.8</span></li> 
+                    </ul>
+                    <h3 class="jb-roboto text-uppercase my-3 mt-4 .jb-fs-m jb-fw-300">Red wine</h3>
+                    <ul class="pl-0 jb-roboto .jb-fs-s">
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Cuvée Cõtes du Rhóne Vigneros de Caracterem</span> <span class="col-3">3.5</span></li> 
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Cabernet Sauvignon, Cháteau Tour du Roch-Milan 2011</span> <span class="col-3">3.5</span></li> 
+                    </ul>
+                    <h3 class="jb-roboto text-uppercase my-3 mt-4 .jb-fs-m jb-fw-300">Coctail</h3>
+                    <ul class="pl-0 jb-roboto .jb-fs-s">
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Gin Tonic</span> <span class="col-3">9</span></li> 
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Cuba Libre</span> <span class="col-3">9.9</span></li> 
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Mojito</span> <span class="col-3">9.9</span></li> 
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 my-3">
+                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-m jb-fw-300">Spirits</h3>
+                    <ul class="pl-0 jb-roboto .jb-fs-s">
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Metaxa 12*</span> <span class="col-3">7.5</span></li>                        
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Tullamore Dew</span> <span class="col-3">6.5</span></li>
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Jameson Whiskey</span> <span class="col-3">6.5</span></li>
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Bombay, Añejo Suave</span> <span class="col-3">6.8</span></li>
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Ron Cubay, Añejo Suave</span> <span class="col-3">6.5</span></li>
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Tequila, El Jimador, Reposi</span> <span class="col-3">6.2</span></li>
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Vodka Funlandia</span> <span class="col-3">5.5</span></li>
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Bailey's</span> <span class="col-3">5.5</span></li>
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Jagermeister</span> <span class="col-3">5.5</span></li>
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Graham's Tawny Porto</span> <span class="col-3">4.7</span></li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 my-3">
+                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-xl jb-fw-300">Something to eat</h3>
+                    <ul class="pl-0 jb-roboto .jb-fs-s">
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Soup of the day</span> <span class="col-3">5.8</span></li> 
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Chipotle Citrus Chicken Sandwich</span> <span class="col-3">5.4</span></li> 
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Avocado Toast</span> <span class="col-3">5.6</span></li>
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Super BLT Sandwich</span> <span class="col-3">12.8</span></li> 
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 my-3">
+                    <h3 class="jb-roboto text-uppercase my-3 .jb-fs-xl jb-fw-300">Sweets</h3>
+                    <ul class="pl-0 jb-roboto .jb-fs-s">
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Homemade cakes of the day</span> <span class="col-3">5</span></li> 
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Key Lime and Coconut</span> <span class="col-3">1.5</span></li> 
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Icecream</span> <span class="col-3">2</span></li> 
+                        <li class="d-flex justify-content-between my-3 row"><span class="col">Tiramisu</span> <span class="col-3">6</span></li> 
+                    </ul>
                 </div>
             </div>
             <div class="row">
@@ -94,4 +166,19 @@
             </div>
         </div>    
    </main>
+{% endblock %}
+
+{% block navigation2 %}
+    <li class="nav-item">
+        <a class="nav-link jb-roboto jb-text-underline" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto active jb-text-white" href="menu-page.html">Menu</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto jb-text-underline" href="coffee-page.html">Coffee</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto jb-text-underline" href="ourstory-page.html">Our Story</a>
+    </li>
 {% endblock %}

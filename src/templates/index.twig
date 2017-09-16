@@ -1,22 +1,39 @@
-{% extends '_base.twig' %} {% block content %}
+{% extends '_base.twig' %} 
+
+{% block navigation %}
+    <li class="nav-item">
+        <a class="nav-link jb-roboto active" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto" href="menu-page.html">Menu</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto" href="coffee-page.html">Coffee</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto" href="ourstory-page.html">Our Story</a>
+    </li>
+{% endblock %}
+
+{% block content %}
 <main>
-    <h1 class="px-3 jb-roboto text-uppercase jb-fs-l mt-3">Generic Hipster Coffee</h1>
-    <h2 class="px-3 jb-roboto jb-fs-m">Speciality Coffee, Fresh Food & Local Community.</h2>
+    <h1 class="px-3 jb-roboto text-uppercase jb-fs-l mt-3 jb-fw-300">Generic Hipster Coffee</h1>
+    <h2 class="px-3 jb-roboto jb-fs-m jb-fw-300">Speciality Coffee, Fresh Food & Local Community.</h2>
         <div class="my-4 mx-3">
             <img src="/img/counter.jpg" class="img-fluid" alt="counter">
         </div>
         <div class="container px-3">
             <div class="row">
-                <div class="col-md-4">
-                    <h3 class="jb-roboto jb-fs-m">Opening Hours</h3>
+                <div class="col-auto col-lg">
+                    <h3 class="jb-roboto jb-fs-m jb-fw-300">Opening Hours</h3>
                     <p class="jb-roboto">sunday-thursday: 8:00-23:00 <br>friday-saturday: 8:00-1:00</p>
                 </div>
-                <div class="col-md-4">
-                    <h3 class="jb-roboto jb-fs-m">Book a Table</h3>
+                <div class="col-auto col-lg">
+                    <h3 class="jb-roboto jb-fs-m jb-fw-300">Book a Table</h3>
                     <p class="jb-roboto">Call +1 415-321-4567</p>
                 </div>
-                <div class="col-md-4">
-                    <h3 class="jb-roboto jb-fs-m">Address</h3>
+                <div class="col-auto col-lg">
+                    <h3 class="jb-roboto jb-fs-m jb-fw-300">Address</h3>
                     <p class="jb-roboto">321 Ivy St.<br>San Francisco CA 94102</p>
                 </div>
             </div>
@@ -25,4 +42,19 @@
             </div>
         </div>
 </main>
+{% endblock %}
+
+{% block navigation2 %}
+    <li class="nav-item">
+        <a class="nav-link jb-roboto active jb-text-white" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto jb-text-underline" href="menu-page.html">Menu</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto jb-text-underline" href="coffee-page.html">Coffee</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link jb-roboto jb-text-underline" href="ourstory-page.html">Our Story</a>
+    </li>
 {% endblock %}
